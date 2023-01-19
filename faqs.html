@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACT US</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <link rel="stylesheet" href="faqs.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="javascript.js"></script>
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
+  <link rel="stylesheet" href="BOOTSTRAP/css/bootstrap.min.css">
+  <script src="BOOTSTRAP/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">RHEEM COOLING</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item" id="link">
+          <a id="home" class="nav-link" href="index.html">HOME</a>
+        </li>
+        </li>
+        <li class="nav-item dropdown">
+          <a id="products" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            PRODUCTS
+          </a>
+          <div id="dd" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a id="dd-products" class="dropdown-item" href="products.html">PRODUCTS <span><i id="arrow-pac"
+                  class="fa-solid fa-arrow-left"></i></span></a>
+            <a id="dd-splitac" class="dropdown-item" href="splitac.html">SPLIT AC <span><i id="arrow-sac"
+                  class="fa-solid fa-arrow-left"></i></span></a>
+            <a id="dd-cassetteac" class="dropdown-item" href="cassetteac.html">CASSETTE AC <span><i id="arrow-cac"
+                  class="fa-solid fa-arrow-left"></i></span></a>
+            <a id="dd-windowac" class="dropdown-item" href="windowac.html">WINDOW AC <span><i id="arrow-wac"
+                  class="fa-solid fa-arrow-left"></i></span></a>
+          </div>
+        </li>
+        <li class="nav-item" id="link">
+          <a id="aboutus" class="nav-link" href="aboutus.html">ABOUT US</a>
+        </li>
+        <li class="nav-item" id="link">
+          <a id="contactus" class="nav-link" href="contactus.html">CONTACT US</a>
+        </li>
+        <li class="nav-item" id="link">
+          <a id="faqs" class="nav-link" href="faqs.html">FAQs</a>
+        </li>
+        <li class="nav-item dropdown" id="cart">
+          <a id="products" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            SHOPPING CART <span><i class="fa-solid fa-cart-shopping"></i></span>
+          </a>
+          <div id="ddc" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a id="dd-sc0" class="dropdown-item" href="#">CART IS EMPTY</a>
+            <a id="dd-sc1" class="dropdown-item" href="#" style="display: none;"></a>
+            <a id="dd-sc2" class="dropdown-item" href="#" style="display: none;"></a>
+            <a id="dd-sc3" class="dropdown-item" href="#" style="display: none;"></a>
+            <a id="dd-sc4" class="dropdown-item" href="#" style="display: none;"></a>
+            <a id="dd-sc5" class="dropdown-item" href="#" style="display: none;"></a>
+            <a id="dd-sc6" class="dropdown-item" href="#" style="display: none;"></a>
+            <a id="dd-sc7" class="dropdown-item" href="#" style="display: none;"></a>
+            <a id="dd-sc8" class="dropdown-item" href="#" style="display: none;"></a>
+            <a id="dd-sc9" class="dropdown-item" href="#" style="display: none;"></a>
+            <a id="dd-sct" class="dropdown-item" href="#" style="display: none;">TOTAL <span class="span"
+                id="total"></span></a>
+            <a style="color: white; display: none;" id="checkout-btn" onclick="checkout()" type="button"
+              class="btn btn-primary co-btn" data-toggle="modal" data-target=".bd-example-modal-lg10">CHECK OUT</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+  <div class="container-fluid head">
+    <h1 class="display-1 p-5">HELP CENTER</h1>
+    <p class="display-4 p-3">EVERY THING YOU NEED TO KNOW ABOUT THE PRODUCT.</p>
+  </div>
+
+  <div class="row mt-5 mb-5">
+    <div class="col-lg-6">
+      <h1 class="text-center heading_2">FAQs</h1>
+      <p class="para">Every you need to know about the product. Can't find the answer you
+        looking for? Please chat to our friendly team.</p>
+    </div>
+    <div class="col-lg-6">
+      <div class="accordion acc" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <b>What type of air conditioners do you sell?</b>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              We sell both residential and commercial air conditioners from a variety of top brands including LG,
+              SAMSUNG, Mitsubishi and TOSHIBA. Our selection includes split ac, window ac, cassette ac.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <b>What is the difference between a split and a window air conditioner?</b>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              A split air conditioner is a type of system that uses two separate components: an indoor unit and an
+              outdoor unit. The indoor unit is mounted inside the room, while the outdoor unit is installed outside. A
+              window air conditioner, on the other hand, is a single, self-contained unit that is installed in a window
+              or wall opening.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <b>What are the benefits of using a ductless mini-split air conditioner?</b>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Ductless mini-split air conditioners offer a number of advantages over traditional systems, including
+              energy efficiency, quiet operation, and flexible installation. They also allow you to set different
+              temperatures in different areas of the home, which can save money on cooling costs.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <b>What are the benefits of using cassette ac?</b>
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Cassette air conditioners offer a number of advantages over traditional systems, including energy
+              efficiency, whisper-quiet operation, and flexible installation. They provide a sleek, attractive look and
+              can be installed in ceiling or wall cavities, reducing the amount of space taken up by the unit. They are
+              also great for cooling large areas, as they have a wide air flow range.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <b>How do I know which size air conditioner I need?</b>
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              The size of the air conditioner you need depends on the size of the room or area you want to cool. The
+              larger the room or area, the more powerful the air conditioner should be. We recommend measuring the
+              square footage of the space and then referring to the manufacturer’s size guide for the specific model
+              you’re considering.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid" id="footer">
+    <div class="container pt-4 pb-4">
+      <div class="row" id="links">
+        <div class="col-auto">
+          <a href="https://www.facebook.com/">
+            <div class="container m-3" id="s_link1"></div>
+          </a>
+        </div>
+        <div class="col-auto">
+          <a href="https://www.instagram.com/">
+            <div class="container m-3" id="s_link2"></div>
+          </a>
+        </div>
+        <div class="col-auto">
+          <a href="https://www.telegram.com/">
+            <div class="container m-3" id="s_link3"></div>
+          </a>
+        </div>
+        <div class="col-auto">
+          <a href="https://www.youtube.com/">
+            <div class="container m-3" id="s_link4"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container pb-4">
+      <div class="row" id="fc">
+        <div class="col-auto" id="web_links">
+          <a href="index.html">HOME</a>
+        </div>
+        <div class="col-auto" id="web_links">
+          <a href="products.html">PRODUCTS</a>
+        </div>
+        <div class="col-auto" id="web_links">
+          <a href="splitac.html">SPLIT AC</a>
+        </div>
+        <div class="col-auto" id="web_links">
+          <a href="cassetteac.html">CASSETTE AC</a>
+        </div>
+        <div class="col-auto" id="web_links">
+          <a href="windowac.html">WINDOW AC</a>
+        </div>
+        <div class="col-auto" id="web_links">
+          <a href="aboutus.html">ABOUT US</a>
+        </div>
+      </div>
+      <div class="row pt-2" id="fc">
+        <div class="col-auto">
+          <a href="contactus.html">CONTACT US</a>
+        </div>
+        <div class="col-auto">
+          <a href="faqs.html">FAQs</a>
+        </div>
+        <div class="col-auto">
+          <a href="sitemap.html">SITE MAP</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="sub_cont">
+      <form action="#">
+        <div class="row" id="fc">
+          <div class="col-auto" id="sub_mail">
+            <input class="form-control" required="" type="email" name="" id="email_sub" placeholder="E-MAIL ADDRESS"
+              onblur="sub()">
+          </div>
+          <div class="col-auto" id="sub_btn">
+            <button id="btn_sub" onclick="subscribe()">SUBSCRIBE</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="container pt-4 pb-4">
+      <p style="color: white;">© 2023, RHEEM COOLING, Inc. All rights reserved. RHEEM COOLING, the RHEEM COOLING
+        logo. in
+        the United
+        States of
+        America and elsewhere.
+      </p>
+    </div>
+</body>
+
+</body>
+
+</html>

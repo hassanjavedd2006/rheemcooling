@@ -1,0 +1,366 @@
+#home {
+    margin-left: 120px;
+}
+
+#home,
+#products,
+#aboutus,
+#contactus {
+    margin-right: 40px;
+}
+
+@media only screen and (min-width: 992px) {
+
+    #banner_img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    #banner_text {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 60px;
+    }
+
+    #banner {
+        position: relative;
+    }
+
+    #textarea {
+        height: 20vh;
+    }
+
+    #footer {
+        background-color: black;
+    }
+
+    #footer_img {
+        left: 0;
+        position: relative;
+        display: flex;
+    }
+
+    #footer_img a {
+        color: white;
+    }
+
+    #footer_links a {
+        color: white;
+        text-decoration: none;
+        padding-right: 1%;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        margin-bottom: 4vh;
+    }
+
+    #footer_brand_links a {
+        color: white;
+        text-decoration: none;
+        padding-right: 1%;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        margin-bottom: 4vh;
+    }
+
+    #footer_brand_links {
+        margin-bottom: 4vh;
+    }
+
+    #footer_links {
+        padding-bottom: 3vh;
+    }
+
+    #copyright {
+        color: white;
+        border-top: thin solid white;
+        padding-top: 2vh;
+        text-decoration: none;
+        padding-right: 1%;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+    }
+
+    #home,
+    #products,
+    #aboutus,
+    #contactus,
+    #faq {
+        margin-right: 15px;
+        font-size: 15px;
+        transition: 0.2s;
+        font-weight: bolder;
+        color: black;
+    }
+
+    .bs-splitac {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 45%;
+    }
+
+    .bs-ac-btn {
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+        font-weight: bolder;
+        width: 130px;
+        transition: 0.3s;
+        border: none;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 20px;
+    }
+
+    .bs-ac-btn:hover {
+        background-color: rgb(76, 73, 73);
+        border: none;
+    }
+
+    #contactus {
+        background-color: black;
+        border-radius: 20px;
+        color: white;
+    }
+    #home:hover,
+    #products:hover,
+    #aboutus:hover,
+    #faq:hover {
+        background-color: black;
+        border-radius: 20px;
+        color: white;
+    }
+
+    #dd {
+        background-color: black;
+        border-radius: 20px;
+        width: 170px;
+    }
+
+    #ddc {
+        background-color: black;
+        border-radius: 20px;
+        width: 400px;
+        left: -120%;
+    }
+
+    #cart {
+        right: 0;
+        position: absolute;
+        color: black;
+    }
+
+    .span {
+        right: 5px;
+        position: absolute;
+    }
+
+    #dd-sct {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top: solid white 2px;
+        color: white;
+        font-weight: bolder;
+        background-color: black;
+    }
+
+    #dd-sc {
+        color: white;
+        font-weight: bolder;
+        background-color: black;
+        border-radius: 20px;
+    }
+
+    #dd-splitac,
+    #dd-windowac,
+    #dd-cassetteac {
+        color: white;
+        font-weight: bolder;
+        background-color: black;
+        border-radius: 20px;
+    }
+
+    #arrow-sac,
+    #arrow-wac,
+    #arrow-cac {
+        visibility: hidden;
+    }
+
+    #dd-splitac:hover #arrow-sac {
+        visibility: visible;
+        background-color: black;
+        margin-left: 10px;
+    }
+
+    #dd-windowac:hover #arrow-wac {
+        visibility: visible;
+        background-color: black;
+        margin-left: 10px;
+    }
+
+    #dd-cassetteac:hover #arrow-cac {
+        visibility: visible;
+        margin-left: 10px;
+        background-color: black;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    #banner_img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    #sub_heading {
+        font-size: 19px;
+        font-weight: bolder;
+        margin-bottom: 40px;
+    }
+
+    #banner_text {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 20px;
+    }
+
+    #banner {
+        position: relative;
+    }
+
+    #textarea {
+        height: 20vh;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    #arrow-sac,
+    #arrow-wac,
+    #arrow-cac {
+        visibility: hidden;
+    }
+
+    #home {
+        margin-left: 0px;
+    }
+
+    #home,
+    #products,
+    #aboutus,
+    #contactus,
+    #faq {
+        font-size: 15px;
+        font-weight: bolder;
+        color: black;
+    }
+
+    #cart {
+        color: black;
+        font-weight: bold;
+    }
+    #ddc {
+        background-color: black;
+        border-radius: 20px;
+        width: 100%;
+        position: absolute;
+    }
+    #dd-sct {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top: solid white 2px;
+        color: white;
+        font-weight: bolder;
+        background-color: black;
+    }
+    .span {
+        right: 15px;
+        position: absolute;
+    }
+    #dd-sc {
+        color: white;
+        font-weight: bold;
+        background-color: black;
+        border-radius: 20px;
+    }
+    
+    #dd {
+        background-color: black;
+        border-radius: 20px;
+        width: 100%;
+    }
+    #dd-splitac,
+    #dd-windowac,
+    #dd-cassetteac {
+        color: white;
+        font-weight: bolder;
+        background-color: rgb(69, 51, 51);
+        border-radius: 20px;
+    }
+
+    #footer {
+        background-color: black;
+    }
+
+    #footer_img {
+        left: 0;
+        position: relative;
+        display: flex;
+    }
+
+    #footer_img a {
+        color: white;
+    }
+
+    #footer_links a {
+        color: white;
+        text-decoration: none;
+        padding-right: 1%;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        margin-bottom: 4vh;
+    }
+
+    #footer_brand_links a {
+        color: white;
+        text-decoration: none;
+        padding-right: 1%;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        margin-bottom: 4vh;
+    }
+
+    #footer_brand_links {
+        margin-bottom: 4vh;
+    }
+
+    #footer_links {
+        padding-bottom: 3vh;
+    }
+
+    #copyright {
+        color: white;
+        border-top: 2px solid white;
+        padding-top: 2vh;
+        text-decoration: none;
+        padding-right: 1%;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        margin-bottom: 4vh;
+    }
+}

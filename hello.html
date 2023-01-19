@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+    <style>
+        .chk-atc {
+            top: 1px;
+            position: relative;
+            color: green;
+        }
+
+        .atc-image {
+            width: 100%;
+        }
+
+        .atc-prd-name {
+            top: 20px;
+            position: relative;
+        }
+
+        .atc-prd-pri {
+            top: 20px;
+            position: relative;
+        }
+
+        .atc-prd-qty {
+            float: right;
+        }
+
+        .bs-ac-btn {
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+            width: 130px;
+            transition: 0.3s;
+            border: none;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .bs-ac-btn:hover {
+            background-color: rgb(76, 73, 73);
+            border: none;
+        }
+
+        .minimize {
+            float: left;
+            font-size: 6vh;
+            width: 5%;
+            margin-bottom: 10px;
+        }
+
+        .minimize:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large
+        modal</button>
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <button type="button" class="close minimize" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h6 class=""><span class="chk-atc"><i class="fa-sharp fa-solid fa-circle-check"></i></span>
+                                1 new item(s) have been added to your cart</h6>
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="ASSETS/TOSHIBA/TOS1.2.PNG" alt="" class="atc-image">
+                                </div>
+                                <div class="col-6">
+                                    <h6 class="atc-prd-name">TOSHIBA HAORI</h6>
+                                    <h6 class="atc-prd-pri">$1600</h6>
+                                    <h6 class="atc-prd-qty">Qty: 1</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h6 style="font-size: 20px;">SHOPPING CART</h6>
+                            <h6 style="font-size: 20px;">TOTAL: <span style="float: right;">1600$</span></h6>
+                            <button class="bs-ac-btn">CHECK OUT</button>
+                        </div>
+                    </div>
+                    <h5
+                        style="width: 100%; border-top: thin black solid; border-bottom: thin solid black; padding: 1vh;">
+                        JUST FOR YOU</h5>
+                    <div class="row">
+                        <div class="col-lg-4" style="bottom: 0; position: relative;">
+                            <img class="bs-splitac" src="ASSETS/TOSHIBA/TOS1.2.PNG" alt=""
+                                style="width: 90%; height: 100px;">
+                            <h6 class="text-center">TOSHIBA HAORI</h6>
+                            <button type="button" class="btn btn-primary bs-ac-btn" data-toggle="modal"
+                                data-target=".bd-example-modal-lg1">SEE DETAILS</button>
+                        </div>
+                        <div class="col-lg-4" style="bottom: 0; position: relative;">
+                            <img class="bs-splitac" src="ASSETS/TCL/TCL1.1.PNG" alt=""
+                                style="width: 90%; height: 100px;">
+                            <h6 class="text-center">TCL Elite TAC-18HEG</h6>
+                            <button type="button" class="btn btn-primary bs-ac-btn" data-toggle="modal"
+                                data-target=".bd-example-modal-lg4">SEE DETAILS</button>
+                        </div>
+                        <div class="col-lg-4" style="bottom: 0; position: relative;">
+                            <img class="bs-splitac" src="ASSETS/HAIER/HAI3.1.jpg" alt=""
+                                style="width: 90%; height: 100px;">
+                            <h6 class="text-center">Haier 1 Ton 3 Star Split AC
+                            </h6>
+                            <button type="button" class="btn btn-primary bs-ac-btn" data-toggle="modal"
+                                data-target=".bd-example-modal-lg7">SEE DETAILS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
